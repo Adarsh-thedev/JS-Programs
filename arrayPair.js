@@ -6,5 +6,7 @@ const printPair=(array)=>{
         });
     });
 }
+//nested loops, so the complexity of this program is O(n*n)=O(n^2) 
+
 const array1=['a','b','c','d','e'];
 printPair(array1);
