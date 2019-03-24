@@ -29,4 +29,7 @@ const arr2=['x','y','z'];
 
 console.log(containsCOmmonItems(arr1,arr2));
 
+// there are two loops(not nested) of two arrays so:-
+// complexity of this program is O(a+b);
+
 
