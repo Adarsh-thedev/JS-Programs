@@ -7,3 +7,8 @@ for(var i=0; i<num; i++){
     }
 }
 
+
+// to run the script -> 1. Open LinkedIn and go to the browser console
+//                           -> 2. Copy and paste the program and press enter
+//                           -> 3. type    sendRequests(no of people you want to send reqest)
+
