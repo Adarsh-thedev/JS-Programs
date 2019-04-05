@@ -2,7 +2,7 @@
 
 // for example ->
 //                        [2,3,4,1,5] , will return true as the array contains 3&5 and 3+5=8
-//                        [2,3,4,1] , 8 will return false
+//                        [2,3,4,1] , 8 will return false as there are no two numbers whose sum == 8
 
 isSumInArray = (array,sumToBeFound) => {
     obj = {};
