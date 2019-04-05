@@ -4,7 +4,7 @@ const mergeSortedArrays = (array1,array2) => {
     let array2Item = array2[0];
     let i=1;
     let j=1;
-    while(array1Item || array2Item){
+    while(array1Item || array2Item){    //O(n)
        if(!array2Item || array1Item < array2Item){ // !array2Item -> if no item in array2 then it turns it into true
            mergedArray.push(array1Item);
            array1Item = array1[i];
@@ -18,6 +18,8 @@ const mergeSortedArrays = (array1,array2) => {
     }
     return mergedArray;
 }
+
+// Complexity -> O(n)
 
 const Array1 = [1,4,6,7,9];
 const Array2 = [2,4,7,8,10];
