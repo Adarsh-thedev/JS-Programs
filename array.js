@@ -5,7 +5,7 @@ class myArray{
     }
 
     get (index) {
-        return this.data[this.index];
+        return this.data[index];
     }
 
     push (item) {
@@ -32,5 +32,7 @@ const array1 = new myArray();
 array1.push(1);
 array1.push(5);
 array1.push(4);
+x = array1.get(1);
 array1.delete(1);
+console.log(x);
 console.log(array1);
