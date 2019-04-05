@@ -21,9 +21,9 @@ class myArray{
 
     delete (index) {
         for(let i=index; i<this.length-1; i++){
-            this.data[i] = this.data[i+1];
+            this.data[i] = this.data[i+1]; //from the given index changes values of[index] to values[index+1]
         }
-        delete this.data[this.length-1];
+        delete this.data[this.length-1];  //last item is repeated as we have changed values,so we need to delete last item
         this.length-- ;
     }
 }
