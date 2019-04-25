@@ -1,3 +1,8 @@
+//Given an array --> find the first recurring character
+// ex :- [2,5,1,2,3,5,1,2,4] should return true
+// [2,1,1,2,3,5,] --> 1
+// [2,3,4,5]  --> undefined
+
 const firstRecurring = (input) => {
     let map = {};
     for (let i = 0; i < input.length; i++) {
