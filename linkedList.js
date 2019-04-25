@@ -49,7 +49,7 @@ class LikedList {
     }
 
     insert(index,value) {
-        if(index >= this.length) {
+        if(index >= this.length) { //index out of bound
             console.log("Index out of bound, added at tail");
             return this.append(value);
         }
@@ -57,18 +57,18 @@ class LikedList {
             value : value,
             next : null
         }
-        const leader = this.traverseToIndex(index-1);
-        const holdingPointer = leader.next;
-        leader.next = newNode;
-        newNode.next = holdingPointer;
-        this.length++;
-        return this.printList();
+        const leader = this.traverseToIndex(index-1); //previos node from the index where insertion is to be done
+        const holdingPointer = leader.next; // node at the index where insertion is to be performed
+        leader.next = newNode; // pointer of previous node -> new node
+        newNode.next = holdingPointer; // pointer of new node -> node which was at the index of insertion
+        this.length++; 
+        return this.printList();         
     }
 
     remove(index) {
         const leader = this.traverseToIndex(index-1);
         const unwantedNode = leader.next;
-        leader.next = unwantedNode.next;
+        leader.next = unwantedNode.next; // pointer points to the next node of the node at the given index
         this.length--;
         return this.printList; 
     }
