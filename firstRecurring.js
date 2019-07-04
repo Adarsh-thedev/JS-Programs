@@ -1,5 +1,5 @@
 //Given an array --> find the first recurring character
-// ex :- [2,5,1,2,3,5,1,2,4] should return true
+// ex :- [2,5,1,2,3,5,1,2,4] should return 2
 // [2,1,1,2,3,5,] --> 1
 // [2,3,4,5]  --> undefined
 

@@ -21,4 +21,4 @@ const isSumInArray = (array,sumToBeFound) => {
 // Complexity of  this program is O(n)
 // It will require some additional space , space complexity of this program is O(n)
   
-console.log(isSumInArray([2,3,4,1],8));
+console.log(isSumInArray([2,3,4,1],5));
